@@ -1,3 +1,4 @@
+import java.util.Calendar;
 import java.util.Scanner;
 
 public class readingUserInputVideo72 {
@@ -20,16 +21,21 @@ is just like we have System.out.print and System.out.println to print text on co
 Similarly we have System.in  to read text from console
 
  */
-
-        System.out.print("please enter your name :");
+        System.out.print("Please enter your year of Birth:");
+        int birthYearOfUser = scannerNo1.nextInt();
+        scannerNo1.nextLine(); // this newline() is to handle enter key pressed by user
 /*
 System.out.print will print text and leave cursor at same line.
 Where as System.out.println will print text and move cursor to next line
  */
+        System.out.print("please enter your name :");
+        String nameOfUser = scannerNo1.nextLine();
+        scannerNo1.close();                       // You must close Scanner object once  your work is done.
 
-        String myName = scannerNo1.nextLine();
-        scannerNo1.close(); // You must close Scanner object once  your work is done.
-        System.out.println("You have sweet name : " + myName);
+        int currentYear = Calendar.getInstance().get(Calendar.YEAR); // fetch current year 
+        int ageOfUser = currentYear - birthYearOfUser;
+
+        System.out.println("You have sweet name- " + nameOfUser + " and your age is- " +ageOfUser);
 
     }
 
