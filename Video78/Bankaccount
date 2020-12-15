@@ -1,0 +1,110 @@
+package com.amitsuneja;
+// code > generator (if this is not working then install Gradle Dependencies Formatter from below link
+// https://plugins.jetbrains.com/plugin/7937-gradle-dependencies-formatter
+
+public class Bankaccount { // Class definition with
+
+    private String accNumber;
+    private int balance;
+    private String customerName;
+    private String customerEmailAddress;
+    private String customerPhoneNumber;
+
+
+    // fist constructor definition
+    public Bankaccount(){
+        this("123456789", 0, "Default Customer Name", "Default Email",
+                "Default Phone");
+        System.out.println("This this my first constructor and remember constructors can be overloaded.");
+    }
+
+
+    // Second constructor definition  AND constructor can be overloaded
+    // Also we can call one constructor from another constructor.
+    public Bankaccount(String accNumber, int balance ,String customerName, String customerEmailAddress,
+                       String customerPhoneNumber ) {
+        System.out.println("This this Second Constructor.");
+        this.accNumber = accNumber;   // you can use setter setAccNumber(String accNumber) but its not good idea
+                                        // reason will be explained inheritance class next topic.
+                                    // so remember thumb rule do not call setter or getter in constructor.
+        this.balance = balance;
+        this.customerName = customerName;
+        this.customerEmailAddress = customerEmailAddress;
+        this.customerPhoneNumber = customerPhoneNumber;
+    }
+
+    public Bankaccount(String customerName, String customerEmailAddress, String customerPhoneNumber) {
+        this("0000", 0,customerName, customerEmailAddress, customerPhoneNumber  );
+        System.out.println("This is Third Constructor.");
+
+    }
+
+
+
+
+    private void printBalance(){
+        System.out.println("account balance:" + this.balance);
+    }
+
+    public void deposit(int depositAmount){
+        this.balance += depositAmount;
+        System.out.println("amount deposited:" +depositAmount);
+        printBalance();
+    }
+
+    public void withdrawal(int withdrawalAmount){
+        if (this.balance - withdrawalAmount > 0 ){
+            this.balance -= withdrawalAmount;
+            System.out.println("amount withdrawn :" + withdrawalAmount);
+            printBalance();
+
+        }else{
+            System.out.println("Low Balance in Account");
+            printBalance();
+        }
+    }
+
+
+
+
+
+    public String getAccNumber() {
+        return accNumber;
+    }
+
+    public void setAccNumber(String accNumber) {
+        this.accNumber = accNumber;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+
+    public void setBalance(int balance) {
+        this.balance = balance;
+    }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public String getCustomerEmailAddress() {
+        return customerEmailAddress;
+    }
+
+    public void setCustomerEmailAddress(String customerEmailAddress) {
+        this.customerEmailAddress = customerEmailAddress;
+    }
+
+    public String getCustomerPhoneNumber() {
+        return customerPhoneNumber;
+    }
+
+    public void setCustomerPhoneNumber(String customerPhoneNumber) {
+        this.customerPhoneNumber = customerPhoneNumber;
+    }
+}
