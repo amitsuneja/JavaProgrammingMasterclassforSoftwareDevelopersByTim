@@ -1,0 +1,18 @@
+keyword super - is used to access or call the parent class members, variables and methods."super" is commonly used with a method overriding when we call a method with 
+the same name from the parent class.
+call to super parentheses must be the first statement in each constructor.
+a call to the constructor that hasn't got any arguments and keep in mind that the call to super
+
+
+"this"- "this" is used to call the current class members variables and methods, so "this"is required when we have a parameter with the same name as an instance 
+variable or field. "this" is commonly used with constructors and setters and optionally used in getters.
+you'll use this() parentheses to call a constructor from another overloaded constructor in the same class.
+the call to "this" parentheses can only be used in a constructor and it must be the first statement in a constructor.
+"this" is used with constructor chaining, in other words when one constructor calls another constructor and it helps to reduce duplicated code.
+
+
+Note : we can use both of them anywhere in a class except in static areas which is the static block or a static method, any attempt to do so there will lead to compile time errors
+
+Note : constructor can have a call to "super" parenthesis or "this" parenthesis but it can't have both
+
+
