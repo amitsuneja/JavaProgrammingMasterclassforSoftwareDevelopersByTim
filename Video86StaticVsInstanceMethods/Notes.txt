@@ -7,9 +7,15 @@ members in java - The components of a class, such as its instance variables or m
 Static keyword - Static keyword can be used with class, variable, method and block. 
 
 
-Static members(members means variables or methods)  belong to the class instead of a specific instance, this means if you make a member static, you can access it without object
-See example SimpleStaticExample.java
+Java Static members - (members means variables or methods)  belong to the class instead of a specific instance, this means if you make a member static, you can access it without object See example SimpleStaticExample.java
 
 Static members are common for all the instances(objects) of the class but non-static members are separate for each instance of class
 
-Static block - Static block is used for initializing the static variables.This block gets executed when the class is loaded in the memory. A class can have multiple Static blocks, which will execute in the same sequence in which they have been written into the program.See example MultipleStaticblocks.java
+Java Static block - Static block is used for initializing the static variables.This block gets executed when the class is loaded in the memory. A class can have multiple Static blocks, which will execute in the same sequence in which they have been written into the program.See example MultipleStaticblocks.java
+
+
+Java Static Variables - Static variable is common to all the instances (or objects) of the class because it is a class level variable. In other words you can say that only a single copy of static variable is created and shared among all the instances of the class. Memory allocation for such variables only happens once when the class is loaded in the memory.
+Few Important Points:
+Static variables are also known as Class Variables.
+Unlike non-static variables, such variables can be accessed directly in static and non-static methods.
+example -  StaticVariablesCanBeAccessedDirectlyInStaticMethod.java
