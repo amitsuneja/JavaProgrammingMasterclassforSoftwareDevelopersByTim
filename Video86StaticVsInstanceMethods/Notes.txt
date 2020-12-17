@@ -1,5 +1,12 @@
-Static keyword can be used with class, variable, method and block. 
+members in java - The components of a class, such as its instance variables or methods are called the members of a class or class members. A class member is declared with an access modifier to specify how it is accessed by the other classes in Java. A Java class member can take any of the access modifiers, such as - public, protected, default and private.
 
-Static members belong to the class instead of a specific instance, this means if you make a member static, you can access it without object
+
+
+Static keyword - Static keyword can be used with class, variable, method and block. 
+
+Static members(members means variables or methods)  belong to the class instead of a specific instance, this means if you make a member static, you can access it without object
+
 
 Static members are common for all the instances(objects) of the class but non-static members are separate for each instance of class
+
+Static block - Static block is used for initializing the static variables.This block gets executed when the class is loaded in the memory. A class can have multiple Static blocks, which will execute in the same sequence in which they have been written into the program.
