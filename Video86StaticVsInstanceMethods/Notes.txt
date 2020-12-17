@@ -1,0 +1,1 @@
+Static keyword can be used with class, variable, method and block. 
