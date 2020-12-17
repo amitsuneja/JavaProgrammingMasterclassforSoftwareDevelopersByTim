@@ -10,4 +10,4 @@ See example SimpleStaticExample.java
 
 Static members are common for all the instances(objects) of the class but non-static members are separate for each instance of class
 
-Static block - Static block is used for initializing the static variables.This block gets executed when the class is loaded in the memory. A class can have multiple Static blocks, which will execute in the same sequence in which they have been written into the program.
+Static block - Static block is used for initializing the static variables.This block gets executed when the class is loaded in the memory. A class can have multiple Static blocks, which will execute in the same sequence in which they have been written into the program.See example MultipleStaticblocks.java
