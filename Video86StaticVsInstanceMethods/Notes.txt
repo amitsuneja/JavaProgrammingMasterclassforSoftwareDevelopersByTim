@@ -1,18 +1,25 @@
 /* https://beginnersbook.com/2013/04/java-static-class-block-methods-variables/ */
 
 java class members  - The components of a class, such as its instance variables or methods are called the members of a class or class members. 
-A class member is declared with an access modifier to specify how it is accessed by the other classes in Java. A Java class member can take any of the access modifiers, such as - public, protected, default and private.
+A class member is declared with an access modifier to specify how it is accessed by the other classes in Java. A Java class member can take any of the access modifiers, 
+such as - public, protected, default and private.
 
 
 
 Static keyword - Static keyword can be used with class, variable, method and block. 
 
 
-Java Static members - (members means variables or methods)  belong to the class instead of a specific instance, this means if you make a member static, you can access it without object See example SimpleStaticExample.java
-
+Java Static members - (members means variables or methods)  belong to the class instead of a specific instance, this means if you make a member static, you can access it 
+without object See example SimpleStaticExample.java
 Static members are common for all the instances(objects) of the class but non-static members are separate for each instance of class
 
+
+
+
 Java Static block - Static block is used for initializing the static variables.This block gets executed when the class is loaded in the memory. A class can have multiple Static blocks, which will execute in the same sequence in which they have been written into the program.See example MultipleStaticblocks.java
+
+
+
 
 
 Java Static Variables - Static variable is common to all the instances (or objects) of the class because it is a class level variable. In other words you can say that only a single copy of static variable is created and shared among all the instances of the class. Memory allocation for such variables only happens once when the class is loaded in the memory.
@@ -23,12 +30,25 @@ example -  StaticVariablesCanBeAccessedDirectlyInStaticMethod.java
 ecample - StaticVariablesAreSharedAmongAllTheInstancesOfClass.java
 
 
+
+
+
 Java Static Methods - Static Methods can access class variables(static variables) without using object(instance) of the class, however non-static methods and non-static 
 variables can only be accessed using objects. Static methods can be accessed directly in static and non-static methods.
 example - StaticMethodMainIsAccessingStaticVariablesWithoutObject.java
 example - StaticMethodAccessedDirectlyInStaticAndNonStaticMethod.java
 Static methods can't be overridden.
 Static methods cannot use this or super keywords.
+abstract methods can't be static.
+
+The following combinations of the instance, class methods and variables are valid:
+Instance methods can directly access both instance methods and instance variables
+Instance methods can also access static variables and static methods directly
+static methods can access all static variables and other static methods
+static methods cannot access instance variables and instance methods directly; they need some object reference to do so
+
+
+
 
 
 
