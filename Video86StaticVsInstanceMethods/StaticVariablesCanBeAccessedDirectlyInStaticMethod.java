@@ -11,3 +11,9 @@ class JavaExample3{
       disp();
   }
 }
+
+
+/*
+Var1 is: 0
+Var2 is: null
+*/
