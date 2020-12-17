@@ -27,7 +27,8 @@ Java Static Methods - Static Methods can access class variables(static variables
 variables can only be accessed using objects. Static methods can be accessed directly in static and non-static methods.
 example - StaticMethodMainIsAccessingStaticVariablesWithoutObject.java
 example - StaticMethodAccessedDirectlyInStaticAndNonStaticMethod.java
-Static methods can't be overridden
+Static methods can't be overridden.
+Static methods cannot use this or super keywords.
 
 
 
