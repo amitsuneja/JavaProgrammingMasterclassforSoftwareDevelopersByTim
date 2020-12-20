@@ -1,0 +1,10 @@
+package com.amitsuneja;
+
+class Forgetable extends Movie {
+    public Forgetable() {
+        super("Forgetable");
+    }
+
+    // No plot method
+}
+
