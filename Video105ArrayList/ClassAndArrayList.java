@@ -41,23 +41,51 @@ public class Main {
 
         System.out.println("______________________________________");
         // Search for attribute  in ArrayList
-        boolean searchResult1 = customizedNameSearch1(listofstudents,"ramesh");
-        System.out.println(searchResult1);
-        searchResult1 = customizedNameSearch2(listofstudents,"Ramesh");
-        System.out.println(searchResult1);
+        Student searchResult1 = customizedNameSearch1(listofstudents,"Mala");
+        howToPrintResultOfCustomizedNameSearch1(searchResult1);
+        searchResult1 = customizedNameSearch1(listofstudents,"Ramesh");
+        howToPrintResultOfCustomizedNameSearch1(searchResult1);
+        System.out.println("______________________________________");
+        boolean searchResult2 = customizedNameSearch2(listofstudents, "Mala");
+        System.out.println(searchResult2);
+        searchResult2 = customizedNameSearch2(listofstudents, "Ramesh");
+        System.out.println(searchResult2);
+
+
+
+
+
     }
 
 
 
 
-    public static boolean customizedNameSearch1(ArrayList<Student> listofstudents, String stringToSearch) {
+    public static Student customizedNameSearch1(ArrayList<Student> listofstudents, String stringToSearch) {
         boolean testResult = false;
+        int indexOfItem = Integer.MIN_VALUE;
         for (int i = 0; i < listofstudents.size(); i++) {
             if (stringToSearch.equals(listofstudents.get(i).getName())){
                 testResult = true;
+                indexOfItem = i;
             }
         }
-        return testResult;
+        if (testResult){
+            return listofstudents.get(indexOfItem);
+        }else{
+            return null;
+        }
+    }
+
+    public static void howToPrintResultOfCustomizedNameSearch1(Student StudentObject){
+        if (StudentObject == null){
+            System.out.println("Student not found");
+        }else{
+            System.out.println("Roll No =" + StudentObject.getRollno());
+            System.out.println("Name =" + StudentObject.getName());
+            System.out.println("Marks =" + StudentObject.getRollno());
+        }
+
+
     }
 
     public static boolean customizedNameSearch2(ArrayList<Student> listofstudents, String stringToSearch) {
@@ -67,7 +95,9 @@ public class Main {
                 testResult = true;
             }
         }
+
         return testResult;
+
     }
 
 }
