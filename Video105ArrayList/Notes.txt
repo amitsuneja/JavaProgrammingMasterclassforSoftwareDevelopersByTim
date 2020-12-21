@@ -1,1 +1,27 @@
+The ArrayList class is a resizable array, which can be found in the java.util package.
 
+The difference between a built-in array and an ArrayList in Java, is that the size of an array cannot be modified (if you want to add or remove elements to/from an array, you have to create a new one). While elements can be added and removed from an ArrayList whenever you want. The syntax is also slightly different:
+
+
+
+import java.util.ArrayList; // import the ArrayList class
+ArrayList<String> cars = new ArrayList<String>(); // Create an ArrayList object
+
+
+
+
+
+The important points about Java ArrayList class are:
+
+Java ArrayList class can contain duplicate elements.
+Java ArrayList class maintains insertion order.
+Java ArrayList class is non synchronized.if multiple threads try to modify an ArrayList at the same time then the final result becomes not-deterministic because one thread might override the changes done by another thread.
+Java ArrayList allows random access because array works at the index basis.
+In ArrayList, manipulation is little bit slower than the LinkedList in Java because a lot of shifting needs to occur if any element is removed from the array list.
+
+
+
+
+
+Example -  demonstrating how to synchronize concurrent modifications to an ArrayList
+https://www.callicoder.com/java-arraylist/
