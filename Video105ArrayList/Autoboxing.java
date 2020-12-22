@@ -13,7 +13,7 @@ This is incorrect.
 Instead create a class "Myintclass.java" or like in created below Main class ,  which have int variable "myIntVar"
 and then create object  of call using its constructor and store it in ArrayList.
 */
-    /*
+ /*
     what is Autoboxing ?
     https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html
     Autoboxing is the automatic conversion that the Java compiler makes between the primitive types and their
@@ -33,7 +33,7 @@ and then create object  of call using its constructor and store it in ArrayList.
 |short	        |Short          |
 |double	        |Double         |
  --------------------------------
-     */
+ */
 
 
 
@@ -48,7 +48,7 @@ and then create object  of call using its constructor and store it in ArrayList.
        // Integer myint = new Integer(56); this is depreciated.=, called boxying
         // boxing converting int into primitive type Integer in above line is called boxing.
 
-        Integer my_int = 700; // removed boxing see above line , which is depreciated
+        Integer my_int = 700; // removed boxing see above line , compile time it convert to Integer.valueOf(700);
         System.out.println(my_int);
         System.out.println(Integer.valueOf(my_int)); // this is boxing which is not actually required in this version of java.
 
@@ -56,6 +56,13 @@ and then create object  of call using its constructor and store it in ArrayList.
         Integer one_int = 800; // removed boxing
         ListofIntsinArratList.add(one_int);
         System.out.println(ListofIntsinArratList.get(0));
+
+        Integer classwalaint = 999;
+        int x =  classwalaint;
+        //classwalaint.intValue(); is doing unboxing in backend while compiling code
+        System.out.println(x);
+
+
 
 
 
