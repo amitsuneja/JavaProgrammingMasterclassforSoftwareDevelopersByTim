@@ -24,9 +24,11 @@ its constructor and store it in ArrayList.
         ListofNumbersinArratList.add(myint);
         System.out.println(ListofNumbersinArratList.get(0).getmyIntVar());
 
-      //  Integer myint = new Integer(56); this is depreciated.
+       // Integer myint = new Integer(56); this is depreciated.
+        
         Integer my_int = 700; // removed boxing see above line , which is depreciated
         System.out.println(my_int);
+        System.out.println(Integer.valueOf(my_int)); // this is boxing which is not actually required in this version of java.
 
         ArrayList<Integer>  ListofIntsinArratList = new ArrayList<Integer>();
         Integer one_int = 800; // removed boxing
