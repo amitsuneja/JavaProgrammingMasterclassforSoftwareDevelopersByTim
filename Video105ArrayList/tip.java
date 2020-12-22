@@ -24,6 +24,16 @@ its constructor and store it in ArrayList.
         ListofNumbersinArratList.add(myint);
         System.out.println(ListofNumbersinArratList.get(0).getmyIntVar());
 
+      //  Integer myint = new Integer(56); this is depreciated.
+        Integer my_int = 700; // removed boxing see above line , which is depreciated
+        System.out.println(my_int);
+
+        ArrayList<Integer>  ListofIntsinArratList = new ArrayList<Integer>();
+        Integer one_int = 800; // removed boxing
+        ListofIntsinArratList.add(one_int);
+        System.out.println(ListofIntsinArratList.get(0));
+
+
 
 
     } //main method end here.
@@ -51,7 +61,7 @@ class Myintclass {
     // class Myintclass
 
 
-    // declaring class variables
+    // declaring class variables always declare them as private
     private int myIntVar;
 
 
