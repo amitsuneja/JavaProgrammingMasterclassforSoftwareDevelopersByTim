@@ -16,7 +16,7 @@ Array : -
 */
 
 
-public class Main {
+public class my_araay {
   public static void main(String[] args) {
     int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
     for (int i = 0; i < myNumbers.length; ++i) {
@@ -28,6 +28,16 @@ public class Main {
 }
 
 
+/*
+ArrayList:
+1. Java ArrayList class uses a dynamic array for storing the elements. It is like an array, but there is no size limit. We can add or remove elements anytime.
+2. It is found in the java.util package. 
+3. Java ArrayList class can contain duplicate elements.
+4. Java ArrayList class maintains insertion order.
+5. Java ArrayList class is non synchronized.
+6. Java ArrayList allows random access because array works at the index basis.
+7. In ArrayList, manipulation is little bit slower than the LinkedList in Java because a lot of shifting needs to occur if any element is removed from the array list.
 
+*/
 
-
+ArrayList<String> list=new ArrayList<String>();//creating new generic arraylist  
